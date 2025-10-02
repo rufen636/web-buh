@@ -1,0 +1,119 @@
+/* Ваши кастомные стили */
+.upper_div {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 2px 30px;
+}
+
+.logo_1 {
+    width: 180px;
+    height: 90px;
+}
+
+.lower_div {
+    background-color: #292936;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.lower_div .menu ul {
+    display: flex;
+    justify-content: center;
+}
+
+.lower_div .menu li {
+    border-right: white 1px solid;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+
+.lower_div .menu ul li:last-child {
+    border: none;
+}
+
+.lower_div .menu ul li a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.lower_div .menu ul li a:hover {
+    transform: scale(1.20);
+}
+
+/* Фиксированный header */
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Отступ для контента */
+body {
+    padding-top: 190px; /* Высота header'а */
+    margin: 0;
+}
+
+/* Убираем прозрачность по бокам */
+.full-width-bg {
+    background-color: #292936;
+    width: 100%;
+    margin: 0;
+}
+/* Адаптивность header */
+@media (max-width: 1024px) {
+    body { padding-top: 160px; }
+    .upper_div { margin: 0 16px; }
+    .logo_1 { width: 150px; height: 75px; }
+    .lower_div .menu li { padding-left: 24px; padding-right: 24px; }
+}
+
+@media (max-width: 768px) {
+    body { padding-top: 140px; }
+    .upper_div { display:none; }
+    .lower_div .menu ul { flex-wrap: wrap; gap: 10px; }
+    .lower_div .menu li { border: none; padding: 8px 12px; }
+}
+
+@media (max-width: 480px) {
+    body { padding-top: 64px; }
+    .logo_1 { width: 120px; height: 60px; }
+}
+
+/* Мобильное меню */
+.mobile-menu { display: none; }
+@media (max-width: 768px) {
+    .menu { display: none; }
+    .menu.is-open { display: block; }
+    /* нижняя полоса скрыта по умолчанию на мобилке */
+    .lower_div { display: none; }
+    .lower_div.is-open { display: block; }
+}
+
+/* Верхняя мобильная панель */
+.topbar { display:none; }
+@media (max-width: 768px) {
+    .topbar {
+        display:flex; align-items:center; justify-content:space-between;
+        height:64px; padding: 0 16px; background:white; color:#fff;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+    .topbar .logo_1 { width: 120px; height: auto; }
+}
+
+/* Мягкие эффекты hover */
+.lower_div .menu ul li a {
+    display: inline-block;
+    transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.lower_div .menu ul li a:hover {
+    transform: translateY(-2px) scale(1.06);
+    color: #F7F5F0;
+}

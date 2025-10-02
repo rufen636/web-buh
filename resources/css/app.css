@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Дизайн-токены и базовые анимации */
+:root {
+    --color-primary: #292936;
+    --color-surface: #F7F5F0;
+    --radius-lg: 0.75rem;
+    --shadow-soft: 0 10px 25px rgba(0, 0, 0, 0.08);
+    --header-height: 190px; /* по умолчанию для десктопа */
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slide-up {
+    from { transform: translateY(16px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade-in {
+    animation: fade-in 0.6s ease-out both;
+}
+
+.animate-slide-up {
+    animation: slide-up 0.6s ease-out both;
+}
+
+/* Reveal при скролле */
+.reveal { opacity: 0; transform: translateY(16px); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); transition: all 700ms ease-out; }
+
+/* Утилиты для карточек/блоков */
+.card-surface {
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+/* Контейнер по сетке */
+.container-default { max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; }
+
+/* Первый экран: безопасные отступы, чтобы контент не "съезжал" */
+.hero-safe { padding-top: clamp(2rem, 6vw, 7rem); padding-bottom: clamp(1.5rem, 5vw, 6rem); }
+.hero-content { max-width: 960px; }
+.hero-cta-wrap { display:flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+.hero-cta { display:inline-block; }
+@media (max-width: 768px) {
+    .hero-cta-wrap { flex-direction: column; align-items: flex-start; }
+    .hero-cta { width: 100%; text-align: center; }
+}
+
+/* Футер должен быть внизу страницы */
+html, body, #app { height: 100%; }
+.site-footer { margin-top: auto; }
+
+/* Брейкпоинты */
+@media (max-width: 1024px) {
+    .container-padding { padding-left: 1.5rem; padding-right: 1.5rem; }
+    :root { --header-height: 160px; }
+}
+
+@media (max-width: 768px) {
+    .hide-sm { display: none !important; }
+    .stack-sm { display: flex; flex-direction: column; gap: 0.75rem; }
+    :root { --header-height: 140px; }
+}
+
+@media (max-width: 480px) {
+    .text-hero { font-size: 28px !important; line-height: 1.2; }
+    .text-subhero { font-size: 16px !important; }
+    :root { --header-height: 64px; }
+}
+
+/* Утилиты видимости для адаптива */
+.desktop-only { display: block; }
+.mobile-only { display: none; }
+
+@media (max-width: 768px) {
+    .desktop-only { display: none !important; }
+    .mobile-only { display: block !important; }
+}
+
+/* Контейнер первого экрана: учитываем высоту шапки */
+.hero-container { min-height: calc(100vh - var(--header-height)); }

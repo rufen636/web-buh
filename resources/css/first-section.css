@@ -1,0 +1,78 @@
+/* Анимации и адаптивные стили секций главной страницы */
+.hero-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.35) 60%, rgba(0,0,0,0.45) 100%);
+}
+
+.hero-enter { opacity: 0; transform: translateY(12px); }
+.hero-enter-active { opacity: 1; transform: translateY(0); transition: all 600ms ease-out; }
+
+/* Не позволяем CTA «выпадать» за пределы первого экрана */
+.hero-cta { display: inline-block; white-space: nowrap; }
+@media (max-width: 768px) {
+    .hero-cta { width: 100%; text-align: center; white-space: normal; }
+}
+
+.feature-card {
+    transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.feature-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 1024px) {
+    .first-grid { gap: 1rem; }
+}
+
+@media (max-width: 768px) {
+    .first-grid { display: flex; flex-direction: column; gap: 0.75rem; }
+    .hero-title { font-size: 32px !important; line-height: 1.2; }
+    .hero-subtitle { font-size: 18px !important; }
+}
+
+@media (max-width: 480px) {
+    .hero-cta { width: 100%; text-align: center; display: inline-block; }
+    .icons-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+}
+.first-grid {
+    background:
+        url('/assets/first_section.webp') center/cover no-repeat;
+    position: relative;
+}
+
+.first-grid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.hero-title {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-subtitle {
+    line-height: 1.4;
+}
+
+.hero-cta {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .first-grid {
+        padding: 20px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+}
+
+
+
