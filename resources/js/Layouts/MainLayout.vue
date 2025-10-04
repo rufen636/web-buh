@@ -106,7 +106,7 @@
                         <a href="https://www.instagram.com/blog_in_time?igsh=MW40M3lsNHY3cjRrag%3D%3D&utm_source=qr" aria-label="Instagram" class="flex items-center justify-center w-8 h-8">
                             <img class="w-full h-auto" src="/assets/image%2012.png" alt="Instagram">
                         </a>
-                        <a href="#" aria-label="Telegram" class="flex items-center justify-center w-8 h-8">
+                        <a href="https://t.me/Blogintime_klimuk_e" aria-label="Telegram" class="flex items-center justify-center w-8 h-8">
                             <img class="w-full h-auto" src="/assets/image%2014.png" alt="Telegram">
                         </a>
                     </div>

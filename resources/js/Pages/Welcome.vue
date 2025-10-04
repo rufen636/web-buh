@@ -620,7 +620,7 @@
                             <div class="mt-6 text-center">
                                 <p class="text-sm text-gray-600">
                                     или напишите нам в
-                                    <a href="t.me/Blogintime_klimuk_e" class="text-[#292936] hover:underline font-medium">Telegram</a>
+                                    <a href="https://t.me/Blogintime_klimuk_e" class="text-[#292936] hover:underline font-medium">Telegram</a>
                                 </p>
                             </div>
                         </div>
