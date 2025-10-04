@@ -12,8 +12,8 @@ Route::get('/', function () {
     $country = $cookieCountry ?? 'by'; // если куки нет, ставим Беларусь
 
     $prices = [
-        'by' => ['first'=>450,'opening_business' => 1250, 'legal_support' => 150,'before_start'=>150,'buh'=>300,'consultations'=> 100,'thousand'=>1000],
-        'ru' => ['first'=>15000,'opening_business' => 35000, 'legal_support' => 5000,'before_start'=>5000,'buh'=>10000,'consultations'=>3000,'thousand'=>24500],
+        'by' => ['first'=>300,'opening_business' => 1250, 'legal_support' => 150,'before_start'=>150,'buh'=>300,'consultations'=> 100,'thousand'=>1000],
+        'ru' => ['first'=>10000,'opening_business' => 35000, 'legal_support' => 5000,'before_start'=>5000,'buh'=>10000,'consultations'=>3000,'thousand'=>24500],
     ];
     return Inertia::render('Welcome', [
         'country' => $country,

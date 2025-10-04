@@ -25,7 +25,7 @@ class SendFormRequest extends FormRequest
             'email' => 'required|email',
             'name' => 'required|string',
             'phone' => 'nullable|string',
-            'description' => 'required|string',
+            'description' => 'nullable|string',
         ];
     }
 }

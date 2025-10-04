@@ -48,9 +48,6 @@
                             </a>
                         </div>
                         <div class="flex-1 text-[14px] mt-8">
-                            <div
-                                class="w-4 h-4 mt-1 rounded-full bg-lime-400"
-                            ></div>
                             <div class="mt-1">
                                 Разберем все по полочкам<br/>
                                 и предложим лучшие условия.
@@ -253,6 +250,17 @@
                         <strong>от {{ prices['consultations'] }} {{ country === 'by' ? 'бел. руб' : (country === 'ru' ? 'рос. руб' : '') }} </strong>
                     </p>
                 </div>
+            </div>
+            <div class="fixed bottom-6 right-6 z-50 animate-bounce">
+                <a
+                    href="#form"
+                    class="bg-[#292936] text-white px-8 py-4 rounded-full shadow-2xl hover:bg-[#3a3a4a] transition-all duration-300 transform hover:scale-105 flex items-center gap-2 font-semibold text-lg"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                    </svg>
+                    Оставить заявку
+                </a>
             </div>
             <h2 class="p-10 text-[36px] animate-slide-up">
                 Вы по адрессу если...
@@ -578,12 +586,11 @@
                                 <!-- Описание -->
                                 <div>
                                     <label for="description" class="block text-sm font-medium text-gray-700 mb-2">Сообщение
-                                        *</label>
+                                        </label>
                                     <textarea
                                         id="description"
                                         name="description"
                                         rows="4"
-                                        required
                                         v-model="sendData.description"
                                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#292936] focus:border-transparent transition-colors resize-none"
                                         placeholder="Расскажите о вашем проекте или задайте вопрос..."
@@ -613,7 +620,7 @@
                             <div class="mt-6 text-center">
                                 <p class="text-sm text-gray-600">
                                     или напишите нам в
-                                    <a href="#" class="text-[#292936] hover:underline font-medium">Telegram</a>
+                                    <a href="t.me/Blogintime_klimuk_e" class="text-[#292936] hover:underline font-medium">Telegram</a>
                                 </p>
                             </div>
                         </div>
