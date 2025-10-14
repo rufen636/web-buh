@@ -99,7 +99,7 @@
                 >Наводим порядок в финансах — легко и вовремя</span
                 >
                 <span class="flex-1 text-[20px] mt-2 animate-slide-up"
-                >Blog in time — команда профессионалов, которые умеют
+                >Блог ин тайм — команда профессионалов, которые умеют
                     выстраивать удаленные процессы работы сводя к минимуму так
                     называемый «человеческий фактор»-нервы, забывчивость,
                     ошибки</span
@@ -163,19 +163,19 @@
                     <span>Наши услуги:</span>
                 </div>
                 <div class="flex-[2] border border-black rounded-3xl pt-2 pb-2">
-                    <span>ООО</span>
+                    <a href="#open_business"><span>ООО</span></a>
                 </div>
                 <div class="flex-[4] border border-black rounded-3xl pt-2 pb-2">
-                    <span>Индивидуальным предпринимателям</span>
+                    <a href="#open_business">  <span>Индивидуальным предпринимателям</span> </a >
                 </div>
                 <div class="flex-[3] border border-black rounded-3xl pt-2 pb-2">
-                    <span>Физическим лицам</span>
+                    <a href="#open">  <span>Физическим лицам</span> </a>
                 </div>
             </div>
         </div>
         <div >
             <div class="pl-10 pr-10 pt-10 flex gap-2 stack-sm ">
-                <div
+                <div id="open_business"
                     class="flex-1 p-5 border rounded-xl border-[#292936] text-white bg-[#292936]"
                 >
                     <h2 class="text-[24px]"><strong>Открытие бизнеса</strong></h2>
@@ -188,7 +188,7 @@
                        <strong>от {{ prices['opening_business'] }} {{ country === 'by' ? 'бел. руб' : (country === 'ru' ? 'рос. руб' : '') }} </strong>
                     </p>
                 </div>
-                <div
+                <div id="open"
                     class="flex-1 p-5 border text-black rounded-xl border-[#F7F5F0] bg-[#F7F5F0]"
                 >
                     <h2 class="text-[24px]"><strong>Юридическое сопровождение</strong></h2>
@@ -221,7 +221,7 @@
                     </li>
                 </ul>
                 <p class=" text-[22px]">
-                    <strong>от {{ prices['before_start'] }} {{ country === 'by' ? 'бел. руб' : (country === 'ru' ? 'рос. руб' : '') }} </strong>
+                    <strong>от  {{ prices['before_start'] }} {{ country === 'by' ? 'бел. руб' : (country === 'ru' ? 'рос. руб' : '') }} </strong>
                 </p>
             </div>
             <div class="pl-10 pr-10 pt-5 flex gap-2 stack-sm ">
@@ -475,20 +475,20 @@
                             <h3 class="text-lg md:text-xl font-bold mb-4 md:mb-6 text-gray-800">СВОЙ БУХГАЛТЕР</h3>
                             <div class="space-y-0">
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">ЗАРПЛАТА "ЧИСТЫМИ"</p>
+                                    <p class="text-sm md:text-base text-gray-600">Зарплата "чистыми"</p>
                                     <p class="font-bold text-black text-sm md:text-base mt-1">ОТ  {{ prices['thousand'] }} {{ country === 'by' ? 'BYN' : (country === 'ru' ? 'RUB' : '') }} + НАЛОГИ</p>
                                 </div>
                                 <div class="py-3 md:py-4 ">
-                                    <p class="text-sm md:text-base text-gray-600">БОЛЬНИЧНЫЕ / ОТПУСК</p>
+                                    <p class="text-sm md:text-base text-gray-600">Больничные / Отпуск</p>
                                 </div>
                                 <div class="py-3 md:py-4 ">
-                                    <p class="text-sm md:text-base text-gray-600">РИСКИ И ОТВЕТСТВЕННОСТЬ</p>
+                                    <p class="text-sm md:text-base text-gray-600">Риски и ответственность</p>
                                 </div>
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">НАДО ИСКАТЬ / УВОЛЬНЯТЬ</p>
+                                    <p class="text-sm md:text-base text-gray-600">Надо искать / увольнять</p>
                                 </div>
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">РАБОТАЕТ ПО СТАРИНКЕ</p>
+                                    <p class="text-sm md:text-base text-gray-600">Работает по старинке</p>
                                 </div>
                             </div>
                         </div>
@@ -504,17 +504,17 @@
                                     <p class="font-bold text-black text-sm md:text-base">ОТ  {{ prices['first'] }} {{ country === 'by' ? 'BYN' : (country === 'ru' ? 'RUB' : '') }} В МЕСЯЦ</p>
                                 </div>
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">ВСЕГДА НА СВЯЗИ</p>
+                                    <p class="text-sm md:text-base text-gray-600">Всегда на связи</p>
                                 </div>
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">БЕРЕМ НА СЕБЯ</p>
+                                    <p class="text-sm md:text-base text-gray-600">Берем на себя</p>
                                 </div>
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">ПОДГОТОВЛЕННАЯ КОМАНДА</p>
+                                    <p class="text-sm md:text-base text-gray-600">Подготовленная команда</p>
                                 </div>
                                 <div class="py-3 md:py-4">
-                                    <p class="text-sm md:text-base text-gray-600">АВТОМАТИЗАЦИЯ, ЦИФРОВОЙ
-                                        ДОКУМЕНТООБОРОТ</p>
+                                    <p class="text-sm md:text-base text-gray-600">Автоматизация, цифровой
+                                        документоборот</p>
                                 </div>
                             </div>
                         </div>

@@ -3,7 +3,7 @@
     <header class="fixed-header w-full animate-fade-in">
         <!-- Верхняя часть -->
         <div class="topbar">
-            <img alt="logo_1" class="logo_1" src="/assets/logo1.webp" />
+            <a href="/"><img  alt="logo_1" class="logo_1" src="/assets/logo1.webp" /></a>
             <button
                 @click="toggleMenu"
                 aria-label="Открыть меню"
@@ -14,7 +14,7 @@
         </div>
         <div class="upper_div flex w-full stack-sm">
             <div class="flex-[1]">
-                <img alt="logo_1" class="logo_1" src="/assets/logo1.webp" />
+                <a href="/"> <img alt="logo_1" class="logo_1" src="/assets/logo1.webp" /></a>
             </div>
             <div class="flex-[3] mt-2 ml-2 animate-slide-up">
                 <strong class="desktop-only"
@@ -29,8 +29,7 @@
                 <div
                     class="p-3 border border-black bg-[#292936] text-white rounded-2xl shadow-lg shadow-black/50 w-1/2 text-center transition-transform duration-300 hover:translate-y-[-2px]"
                 >
-                    Моментальная консультация в Telegram
-                </div>
+                    Консультация в Telegram</div>
             </div>
 
             <div class="flex-[2] flex flex-col items-center gap-2">
