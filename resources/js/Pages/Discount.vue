@@ -51,8 +51,8 @@
                             </div>
                         </div>
 
-                        <button class="w-full bg-[#292936] hover:bg-[#292936] text-white font-semibold py-3 px-4 rounded-lg transition duration-300">
-                            Выбрать это предложение
+                        <button  class="w-full bg-[#292936] hover:bg-[#292936] text-white font-semibold py-3 px-4 rounded-lg transition duration-300">
+                            <a href="/#form">Выбрать это предложение</a>
                         </button>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                         </div>
 
                         <button class="w-full bg-[#eb4f78] hover:bg-[#eb4f78] text-white font-semibold py-3 px-4 rounded-lg transition duration-300">
-                            Выбрать долгосрочное сотрудничество
+                            <a href="/#form">Выбрать долгосрочное сотрудничество</a>
                         </button>
                     </div>
                 </div>
