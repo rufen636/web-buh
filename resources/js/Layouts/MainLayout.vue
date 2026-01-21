@@ -22,7 +22,7 @@
                 /></strong>
                 <span class="text-sm desktop-only"
                     >Налоги и бухгалтерия для блогеров, предпринимателей и
-                    организаций | Простые решения сложных вопросов</span
+                    организаций <br> Простые решения сложных вопросов</span
                 >
             </div>
             <div class="flex-[2] flex justify-center">
@@ -53,7 +53,9 @@
                     <ul>
                         <li><a href="/">Главная</a></li>
                         <li><a href="/#about_us">О нас</a></li>
+                        <li><a href="/contacts">Контакты</a></li>
                         <li><a href="/payment">Оплата</a></li>
+                        <li><a href="/discounts">Скидки</a></li>
                         <li style="border-right:none ;"  ><a href="/#products">Услуги</a></li>
                         <li class="mobile-only mt-2"><a href="tel:+375256902823">+375 25 690 28 23</a></li>
                     </ul>

@@ -7,22 +7,22 @@
 
         <!-- first section -->
         <div class="relative z-10 flex h-full text-white first-grid">
-            <div class="ml-10 mt-32 text-[42px] hero-title">
+            <div class="ml-10 mt-32 text-[42px] hero-title" >
                 <div class="">
                     <div class=" ">БУХГАЛТЕРИЯ РАБОТАЕТ,</div>
-                    <div class="flex">
+                    <div class="div_italic">
                         <div class="">ВЫ — СПОКОЙНЫ</div>
-                        <div class="italic text-[24px] ml-12">
+                        <div class=" italic text-[24px] ml-12">
                             Без найма. Без штрафов.<br/>
-                            Без вашего участия.
+                            Без вашего участия
                         </div>
                     </div>
                     <div class="mt-8 text-[26px] pr-8 hero-subtitle">
                         Работаем как свой отдел — но дешевле, тише и без
                         больничных
                     </div>
-                    <div class="flex text-[16px] gap-7 mt-16 stack-sm">
-                        <div class="flex-1">
+                    <div class="flex text-[16px] gap-7 mt-16 stack-sm" style="width: 700px">
+                        <div class="flex-[1/2]">
                             <strong>Оптимизируем</strong><br/>
                             Ваше время
                         </div>
@@ -30,12 +30,12 @@
                             <strong> Закрываем вопросы</strong><br/>
                             контролирующих органов
                         </div>
-                        <div class="flex-1">
+                        <div class="flex-[1/2]">
                             <strong> Своевременно</strong><br/>
                             подаем отчетность
                         </div>
                         <div class="flex-1">
-                            От <strong> {{ prices['first'] }} {{ country === 'by' ? 'BYN' : (country === 'ru' ? 'RUB' : '') }}</strong>/мес.
+                            От <strong> {{ prices['first'] }} {{ country === 'by' ? 'BYN' : (country === 'ru' ? 'RUB' : '') }}</strong>/мес
                         </div>
                     </div>
                     <div class="flex mt-28 stack-sm mb-10">
@@ -50,7 +50,7 @@
                         <div class="flex-1 text-[14px] mt-8">
                             <div class="mt-1">
                                 Разберем все по полочкам<br/>
-                                и предложим лучшие условия.
+                                и предложим лучшие условия
                             </div>
                         </div>
                     </div>
@@ -59,39 +59,143 @@
         </div>
 
         <!-- second section -->
-        <div
-            class="flex flex-col md:flex-row items-center justify-center pt-10 pb-10 pl-10 pr-10 text-center bg-[#F7F5F0] card-surface animate-slide-up"
-        >
-            <div  class="flex-1 flex flex-col items-center feature-card mb-4 md:mb-0">
-                <a href="/#about_us"><img
-                    class="h-[200px] w-[200px]"
-                    alt="Кто мы?"
-                    src="/assets/second-section/1.webp"
-                />
-                <span class="text-center mt-2">Кто мы?</span>
-                </a>
-            </div>
-            <div class="flex-1 flex flex-col items-center feature-card mb-4 md:mb-0">
-                <a href="/#products">
-                <img
-                    class="h-[200px] w-[200px]"
-                    alt="Услуги"
-                    src="/assets/second-section/2.webp"
-                />
-                <span class="text-center mt-2">Услуги</span>
-                </a>
-            </div>
-            <div class="flex-1 flex flex-col items-center feature-card mb-4 md:mb-0">
-                <a href="/#reviews">
-                <img
-                    class="h-[200px] w-[200px]"
-                    alt="Отзывы"
-                    src="/assets/second-section/3.webp"
-                />
-                <span class="text-center mt-2">Отзывы</span>
-                </a>
-            </div>
-        </div>
+                <section class="py-16 bg-[#F7F5F0]" aria-labelledby="reviews-title">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div class="mx-auto max-w-3xl text-center mb-10">
+                            <h2 id="reviews-title" class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
+                                Отзывы клиентов о нашей компании
+                            </h2>
+                            <p class="mt-3 text-gray-600">
+                                Профессиональные услуги в сфере юридического и бухгалтерского сопровождения бизнеса.
+                            </p>
+                        </div>
+
+                        <div class="relative" id="reviews-carousel">
+                            <!-- Лента карточек -->
+                            <div
+                                class="flex gap-6 overflow-x-auto overscroll-smooth snap-x snap-mandatory pb-4 pt-2 px-1"
+                                role="region"
+                                aria-roledescription="carousel"
+                                aria-label="Отзывы клиентов"
+                                tabindex="0"
+                                data-carousel-track
+                            >
+                                <!-- Карточка 1 -->
+                                <article id="reviews" class="snap-start shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[33%] xl:w-[28%] bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6">
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://i.pravatar.cc/72?img=11" alt="Фото клиента" class="h-14 w-14 rounded-full object-cover" />
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900">Алексей П.</h3>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-gray-700">
+                                        Получили комплексное юридическое сопровождение открытия филиала и настроили бухгалтерский учет. Всё четко по срокам и с детальными пояснениями.
+                                    </p>
+                                </article>
+
+                                <!-- Карточка 2 -->
+                                <article class="snap-start shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[33%] xl:w-[28%] bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6">
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://i.pravatar.cc/72?img=32" alt="Фото клиента" class="h-14 w-14 rounded-full object-cover" />
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900">Мария С.</h3>
+                                            <p class="text-sm text-gray-500">Финансовый директор</p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-gray-700">
+                                        Настроили управленческую отчетность и помогли оптимизировать налогообложение. Команда оперативная и внимательная к деталям.
+                                    </p>
+                                </article>
+
+                                <!-- Карточка 3 -->
+                                <article class="snap-start shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[33%] xl:w-[28%] bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6">
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://i.pravatar.cc/72?img=5" alt="Фото клиента" class="h-14 w-14 rounded-full object-cover" />
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900">Ирина К.</h3>
+                                            <p class="text-sm text-gray-500">ИП, e‑commerce</p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-gray-700">
+                                        Помогли с регистрацией товарного знака и сопровождением камеральной проверки. Всё объяснили простыми словами.
+                                    </p>
+                                </article>
+
+                                <!-- Карточка 4 -->
+                                <article class="snap-start shrink-0 w-[85%] sm:w-[60%] md:w-[45%] lg:w-[33%] xl:w-[28%] bg-white rounded-2xl shadow-sm ring-1 ring-gray-100 p-6">
+                                    <div class="flex items-center gap-4">
+                                        <img src="https://i.pravatar.cc/72?img=22" alt="Фото клиента" class="h-14 w-14 rounded-full object-cover" />
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900">Дмитрий Р.</h3>
+                                            <p class="text-sm text-gray-500">Управляющий партнёр</p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-4 text-gray-700">
+                                        Регулярно ведут бухгалтерию и готовят отчётность. Вопросы решаются заранее, без авралов.
+                                    </p>
+                                </article>
+
+                                <!-- Можно добавить больше карточек по аналогии -->
+                            </div>
+
+                            <!-- Кнопки управления -->
+                            <div class="pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between px-1">
+                                <button
+                                    type="button"
+                                    class="pointer-events-auto inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/90 shadow ring-1 ring-black/5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                                    aria-label="Предыдущий отзыв"
+                                    data-carousel-prev
+                                >
+                                    <svg class="h-5 w-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M12.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L8.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"/></svg>
+                                </button>
+                                <button
+                                    type="button"
+                                    class="pointer-events-auto inline-flex items-center justify-center h-10 w-10 rounded-full bg-white/90 shadow ring-1 ring-black/5 hover:bg-white focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                                    aria-label="Следующий отзыв"
+                                    data-carousel-next
+                                >
+                                    <svg class="h-5 w-5 text-gray-700" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M7.293 4.293a1 1 0 011.414 0l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414-1.414L10.586 10 7.293 6.707a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                                </button>
+                            </div>
+
+                            <!-- Индикаторы страниц (по желанию можно скрыть) -->
+                            <div class="mt-6 flex justify-center gap-2" data-carousel-dots></div>
+                        </div>
+                    </div>
+                </section>
+<!--        <div-->
+<!--            class="flex flex-col md:flex-row items-center justify-center pt-10 pb-10 pl-10 pr-10 text-center bg-[#F7F5F0] card-surface animate-slide-up"-->
+<!--        >-->
+<!--            <div  class="flex-1 flex flex-col items-center feature-card mb-4 md:mb-0">-->
+<!--                <a href="/#about_us"><img-->
+<!--                    class="h-[200px] w-[200px]"-->
+<!--                    alt="Кто мы?"-->
+<!--                    src="/assets/second-section/1.webp"-->
+<!--                />-->
+<!--                <span class="text-center mt-2">Кто мы?</span>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="flex-1 flex flex-col items-center feature-card mb-4 md:mb-0">-->
+<!--                <a href="/#products">-->
+<!--                <img-->
+<!--                    class="h-[200px] w-[200px]"-->
+<!--                    alt="Услуги"-->
+<!--                    src="/assets/second-section/2.webp"-->
+<!--                />-->
+<!--                <span class="text-center mt-2">Услуги</span>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="flex-1 flex flex-col items-center feature-card mb-4 md:mb-0">-->
+<!--                <a href="/#reviews">-->
+<!--                <img-->
+<!--                    class="h-[200px] w-[200px]"-->
+<!--                    alt="Отзывы"-->
+<!--                    src="/assets/second-section/3.webp"-->
+<!--                />-->
+<!--                <span class="text-center mt-2">Отзывы</span>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
         <!-- third section -->
         <div class="p-10 ">
             <div class="flex gap-6 stack-sm">
@@ -106,7 +210,7 @@
                 >
             </div>
             <div class="mt-10 mb-10">
-                <img alt="image" src="/assets/third-section/1.webp"/>
+                <img class="w-full" alt="image" src="/assets/blog-promo.jpg"/>
             </div>
             <div class="flex gap-2 stack-sm">
                 <div
@@ -114,7 +218,7 @@
                 >
                     <span class="text-[60px]">10+</span>
                     <span class="mt-4 ml-5"
-                    >Лет опыта работы с ООО, ИП и самозанятыми</span
+                    >Лет опыта работы с ООО, <br>ИП и самозанятыми</span
                     >
                 </div>
                 <div
@@ -216,7 +320,7 @@
                     </li>
                     <li>
                         Проверка текущего состояния учёта, выявление ошибок,
-                        рекомендации по улучшению. Подходит перед проверками или
+                        рекомендации <br>по улучшению. Подходит перед проверками или
                         сменой бухгалтера.
                     </li>
                 </ul>
@@ -231,7 +335,7 @@
                     <h2 class="text-[24px]"><strong>Бухгалтерское сопровождение</strong></h2>
                     <span
                     >Ведение учёта, отчётность, расчёт налогов и зарплат.
-                        Всё вовремя, прозрачно и без лишних хлопот.</span
+                        Всё вовремя, прозрачно <br>и без лишних хлопот.</span
                     >
                     <p class=" text-[22px]">
                       <strong>от   {{ prices['buh'] }} {{ country === 'by' ? 'бел. руб' : (country === 'ru' ? 'рос. руб' : '') }} </strong>
@@ -263,7 +367,7 @@
                 </a>
             </div>
             <h2 class="p-10 text-[36px] animate-slide-up">
-                Вы по адрессу если...
+                Вы по адресу, если...
             </h2>
             <div class="p-10 bg-[#F7F5F0]">
                 <div class="flex stack-sm">
@@ -313,7 +417,7 @@
                             src="/assets/5-section/Rectangle-137.webp"
                         />
                         <p>
-                            Вы забываете о сроках сдачи отчетности — и каждый
+                            Вы забываете о сроках сдачи отчетности — <br>и каждый
                             квартал начинается с паники
                         </p>
                     </div>
@@ -341,7 +445,7 @@
                         <br/>
                         <div class="flex gap-2">
                             <p>
-                                Всего два клика и Вы на консультации, в руках
+                                Всего два клика и Вы на консультации, <br>в руках
                                 профессионалов
                             </p>
                             <img
@@ -916,4 +1020,17 @@ export default {
 };
 </script>
 
-<style src="../../css/first-section.css"></style>
+<style src="../../css/first-section.css">
+
+
+</style>
+<style>
+.div_italic{
+    display: flex;
+}
+@media (max-width: 1024px) {
+    .div_italic{
+        display: block !important;
+    }
+}
+</style>

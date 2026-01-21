@@ -1,8 +1,8 @@
 /* Ваши кастомные стили */
 .upper_div {
     background-color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin: 2px 30px;
 }
 
@@ -13,8 +13,8 @@
 
 .lower_div {
     background-color: #292936;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: white;
 }
 
@@ -55,8 +55,7 @@
 }
 
 /* Отступ для контента */
-body {
-    padding-top: 190px; /* Высота header'а */
+main {
     margin: 0;
 }
 
@@ -66,10 +65,15 @@ body {
     width: 100%;
     margin: 0;
 }
+@media (min-width:1024px) {
+    main{
+        margin-top: 100px !important;
+    }
+}
 /* Адаптивность header */
 @media (max-width: 1024px) {
     body { padding-top: 160px; }
-    .upper_div { margin: 0 16px; }
+    .upper_div { margin: 0 12px; }
     .logo_1 { width: 150px; height: 75px; }
     .lower_div .menu li { padding-left: 24px; padding-right: 24px; }
 }

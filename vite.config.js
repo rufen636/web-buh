@@ -17,4 +17,11 @@ export default defineConfig({
             },
         }),
     ],
+    // server: {
+    //     host: '0.0.0.0',
+    //     port: 8000,
+    //     hmr: {
+    //         host: '5dee5c93f155.ngrok-free.app',
+    //     },
+    // },
 });

@@ -1,6 +1,6 @@
 
 <template>
-    <div class="bg-gray-100 p-10">
+    <div class="bg-gray-100 p-10 payment">
     <div class=" bg-white shadow-lg rounded-lg overflow-hidden">
         <div class="bg-[#F7F5F0] p-5">
             <h1 class="text-2xl font-bold text-black mb-2">ООО «Блог ин тайм»</h1>
@@ -39,5 +39,12 @@
 
 </script>
 <style scoped>
-
+    .payment{
+        margin-top: 50px
+    }
+    @media (max-width: 450px) {
+        .payment{
+            margin-top: 0 !important;
+        }
+    }
 </style>

@@ -35,6 +35,26 @@ Route::get('/payment',function (){
     ]);
 
 });
+Route::get('/contacts',function (){
+    $cookieCountry = request()->cookie('country');
+    $country = $cookieCountry ?? 'by';
+    return Inertia::render('Contacts',[
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+        'country' => $country,
+    ]);
+
+});
+Route::get('/discounts',function (){
+    $cookieCountry = request()->cookie('country');
+    $country = $cookieCountry ?? 'by';
+    return Inertia::render('Discount',[
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+        'country' => $country,
+    ]);
+
+});
 
 Route::post('/set-country', function (Request $request) {
     $country = $request->input('country', 'by');
