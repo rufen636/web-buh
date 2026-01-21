@@ -21,7 +21,7 @@
                         Работаем как свой отдел — но дешевле, тише и без
                         больничных
                     </div>
-                    <div class="flex text-[16px] gap-7 mt-16 stack-sm" style="width: 700px">
+                    <div class="flex text-[16px] gap-7 mt-16 stack-sm" >
                         <div class="flex-[1/2]">
                             <strong>Оптимизируем</strong><br/>
                             Ваше время
