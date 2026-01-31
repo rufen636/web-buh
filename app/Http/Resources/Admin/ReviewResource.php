@@ -28,7 +28,7 @@ class ReviewResource extends JsonResource
                     str_starts_with($this->image->small_uri, 'https://')
                         ? $this->image->small_uri  // Если уже содержит http/https, возвращаем как есть
                         : request()->getScheme() . '://' . request()->getHost() .
-                        (request()->getPort() ? ':' . request()->getPort() : '') .
+                        (request()->getPort() ? ':' . request()->getPort() : '') .'/' .
                         Storage::url($this->image->small_uri)
                     )
                     : " ",
