@@ -39,6 +39,12 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Dashboard
                                 </NavLink>
+                                <NavLink
+                                    :href="route('admin.reviews.index')"
+                                    :active="route().current('admin.reviews.index')"
+                                >
+                                    Отзывы
+                                </NavLink>
                             </div>
                         </div>
 

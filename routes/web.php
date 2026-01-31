@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SendFormController;
+use App\Http\Resources\Admin\ReviewResource;
+use App\Models\Review;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -15,6 +17,7 @@ Route::get('/', function () {
         'by' => ['first'=>300,'opening_business' => 1250, 'legal_support' => 150,'before_start'=>150,'buh'=>300,'consultations'=> 100,'thousand'=>1000],
         'ru' => ['first'=>10000,'opening_business' => 35000, 'legal_support' => 5000,'before_start'=>5000,'buh'=>10000,'consultations'=>3000,'thousand'=>24500],
     ];
+    $reviews = ReviewResource::collection(Review::all())->resolve();
     return Inertia::render('Welcome', [
         'country' => $country,
         'hasCountryCookie' => (bool)$cookieCountry,
@@ -23,6 +26,7 @@ Route::get('/', function () {
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
+        'reviews' => $reviews,
     ]);
 });
 Route::get('/payment',function (){
@@ -75,3 +79,4 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+require __DIR__.'/admin.php';
