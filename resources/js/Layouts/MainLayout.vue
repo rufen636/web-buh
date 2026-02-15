@@ -29,7 +29,7 @@
                 <div
                     class="p-3 border border-black bg-[#292936] text-white rounded-2xl shadow-lg shadow-black/50 w-1/2 text-center transition-transform duration-300 hover:translate-y-[-2px]"
                 >
-                    Консультация в Telegram</div>
+                    <a href="https://t.me/Blogintime_klimuk_e" aria-label="Telegram"> Консультация в Telegram</a></div>
             </div>
 
             <div class="flex-[2] flex flex-col items-center gap-2">
@@ -38,7 +38,7 @@
                     ><strong><a href="#">+375 25 690 28 23</a></strong></span
                 >
                 <a
-                    href="#"
+                    href="https://t.me/Blogintime_klimuk_e"
                     class="text-blue-600 hover:underline transition-colors transition-transform transform duration-200 hover:scale-105"
                 >
                     Быстрая консультация
