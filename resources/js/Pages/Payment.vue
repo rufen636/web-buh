@@ -14,7 +14,7 @@
             <h2 class="text-xl font-semibold text-black mb-3">Реквизиты</h2>
             <p class="text-gray-700">Текущий (расчетный) счет: <strong>BY60 ALFA 3012 2G53 8100 1027 0000</strong> в BYN</p>
             <p class="text-gray-700">Реквизиты банка: ЗАО "АЛЬФА-БАНК", SWIFT ALFABY2X, УНП 101541947</p>
-            <p class="text-gray-700">Юридический адрес банка: 222365, Минская область Воложинский район Раковский сельсовет аг. Раков пер. Свободы 2А пом. 17</p>
+            <p class="text-gray-700">Юридический адрес банка: 220013, г. Минск, ул. Сурганова, 43-47</p>
         </div>
         <div class="bg-[#F7F5F0] p-5">
             <h2 class="text-xl font-semibold text-black mb-3">Оплата с карты АЛЬФА-БАНК</h2>
