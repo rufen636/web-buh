@@ -5,11 +5,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title >Налоги и бухгалтерия — блогеры, ИП и организации Минск</title>
-    <meta name="description" content="Налоги и бухгалтерия — блогеры, ИП и организации Минск">
-    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon.png') }}">
+    <title>{{ $meta['title'] ?? 'Налоги и бухгалтерия — блогеры, ИП и организации Минск' }}</title>
+    <meta name="description" content="{{ $meta['description'] ?? 'Налоги и бухгалтерия — блогеры, ИП и организации Минск' }}">
+    <link rel="canonical" href="{{ rtrim(config('app.site_url'), '/') . (request()->path() === '/' ? '/' : '/' . request()->path()) }}">
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+    <link rel="icon" type="image/png" sizes="120x120" href="{{ asset('favicon-120x120.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon.png') }}">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">

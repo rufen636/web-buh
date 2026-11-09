@@ -3,6 +3,8 @@
 namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Storage;
+use Spatie\Sitemap\SitemapGenerator;
 
 class GoCommand extends Command
 {
@@ -25,7 +27,8 @@ class GoCommand extends Command
      */
     public function handle()
     {
-        $array = [1,2,3,4,5,6,7,8];
-        dd();
+        $path = Storage::disk('public')->path('sitemap.xml');
+        $file = SitemapGenerator::create('https://example.com')->writeToFile($path);
+
     }
 }

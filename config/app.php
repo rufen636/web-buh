@@ -54,6 +54,9 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    // Публичный адрес сайта для sitemap, canonical и robots.txt
+    'site_url' => env('SITE_URL', 'https://blogintime.by'),
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone

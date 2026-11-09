@@ -13,6 +13,10 @@
     RewriteCond %{HTTP:x-xsrf-token} .
     RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
 
+    # Redirect www to the main domain (дубли страниц для поисковиков)
+    RewriteCond %{HTTP_HOST} ^www\.blogintime\.by$ [NC]
+    RewriteRule ^(.*)$ https://blogintime.by/$1 [R=301,L]
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_URI} (.+)/$
