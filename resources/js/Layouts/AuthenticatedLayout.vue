@@ -45,6 +45,12 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Отзывы
                                 </NavLink>
+                                <NavLink
+                                    :href="route('admin.seo.index')"
+                                    :active="route().current('admin.seo.*')"
+                                >
+                                    SEO страниц
+                                </NavLink>
                             </div>
                         </div>
 
@@ -151,6 +157,12 @@ const showingNavigationDropdown = ref(false);
                             :active="route().current('dashboard')"
                         >
                             Dashboard
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink
+                            :href="route('admin.seo.index')"
+                            :active="route().current('admin.seo.*')"
+                        >
+                            SEO страниц
                         </ResponsiveNavLink>
                     </div>
 

@@ -28,10 +28,7 @@ Route::get('/', function () {
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'reviews' => $reviews,
-    ])->withViewData(['meta' => [
-        'title' => 'Бухгалтерия и налоги для блогеров, ИП и организаций в Минске — Блог ин тайм',
-        'description' => 'Бухгалтерское сопровождение, регистрация бизнеса, налоговые консультации и юридическая поддержка для блогеров, ИП и организаций в Беларуси и России.',
-    ]]);
+    ]);
 });
 Route::get('/payment',function (){
     $cookieCountry = request()->cookie('country');
@@ -40,10 +37,7 @@ Route::get('/payment',function (){
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'country' => $country,
-    ])->withViewData(['meta' => [
-        'title' => 'Оплата услуг и реквизиты — Блог ин тайм',
-        'description' => 'Реквизиты ООО «Блог ин тайм» и способы оплаты бухгалтерских услуг: банковский перевод и оплата картой.',
-    ]]);
+    ]);
 
 });
 Route::get('/contacts',function (){
@@ -53,10 +47,7 @@ Route::get('/contacts',function (){
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'country' => $country,
-    ])->withViewData(['meta' => [
-        'title' => 'Контакты бухгалтерской компании — Блог ин тайм',
-        'description' => 'Контакты бухгалтерской компании «Блог ин тайм» в Минске: телефон, email и Telegram. Свяжитесь с нами для консультации по бухгалтерии и налогам.',
-    ]]);
+    ]);
 
 });
 Route::get('/discounts',function (){
@@ -66,10 +57,7 @@ Route::get('/discounts',function (){
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
         'country' => $country,
-    ])->withViewData(['meta' => [
-        'title' => 'Скидки и специальные предложения — Блог ин тайм',
-        'description' => 'Скидки на бухгалтерские услуги: −20% на регистрацию компании вместе с бухгалтерским сопровождением и до −10% при долгосрочном договоре.',
-    ]]);
+    ]);
 
 });
 

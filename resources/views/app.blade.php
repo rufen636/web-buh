@@ -5,9 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ $meta['title'] ?? 'Налоги и бухгалтерия — блогеры, ИП и организации Минск' }}</title>
-    <meta name="description" content="{{ $meta['description'] ?? 'Налоги и бухгалтерия — блогеры, ИП и организации Минск' }}">
-    <link rel="canonical" href="{{ rtrim(config('app.site_url'), '/') . (request()->path() === '/' ? '/' : '/' . request()->path()) }}">
+    <title inertia>{{ $page['props']['seo']['title'] }}</title>
+    <meta inertia="description" name="description" content="{{ $page['props']['seo']['description'] }}">
+    <link inertia="canonical" rel="canonical" href="{{ $page['props']['seo']['canonical'] }}">
+    <meta inertia="robots" name="robots" content="{{ $page['props']['seo']['robots'] }}">
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <link rel="icon" type="image/png" sizes="120x120" href="{{ asset('favicon-120x120.png') }}">
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon.png') }}">

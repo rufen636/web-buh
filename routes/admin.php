@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\Admin\SeoController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SendFormController;
@@ -23,4 +24,6 @@ Route::get('/dashboard', function () {
 Route::group(['middleware' => ['auth:sanctum', 'verified'],'prefix' => 'admin','as'=>'admin.'], function () {
 
     Route::resource('reviews',ReviewController::class);
+    Route::get('seo', [SeoController::class, 'index'])->name('seo.index');
+    Route::put('seo', [SeoController::class, 'update'])->name('seo.update');
 });
